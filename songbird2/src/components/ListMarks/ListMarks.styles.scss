@@ -1,0 +1,26 @@
+.list_marks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 8px 0;
+  overflow: hidden;
+
+  border: 1px solid white;
+  border-radius: 15px;
+
+  &--mark {
+    flex: 1 1 auto;
+    padding: 10px;
+
+    text-align: center;
+
+    background-color: #076598;
+
+    &-active {
+      background-color: lighten(#076598, 15%);
+
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.description_block {
+  flex: 1 1 55%;
+  margin: 3px 0;
+  padding: 15px;
+
+  background-color: lighten(#000000e6, 20%);
+  border: 1px solid white;
+  border-radius: 15px;
+
+  &--invite {
+    margin: 0 0 5px 20px;
+  }
+}
+
+.media_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+
+  &--img {
+    width: 200px;
+    height: 155px;
+    margin: 0 10px;
+
+    border-radius: 15px;
+
+    object-fit: cover;
+
+    @media (max-width: 480px) {
+      margin: 0 auto;
+    }
+  }
+
+  &--info {
+    flex: 1 1 auto;
+    padding: 0 25px;
+
+    @media (max-width: 480px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &--name {
+    padding: 4px 0;
+
+    font-size: 2rem;
+
+    border-bottom: 1px solid gray;
+  }
+
+  &--species {
+    padding: 4px 0;
+
+    border-bottom: 1px solid gray;
+  }
+
+  &--player {
+    width: 100%;
+    margin: 15px 0;
+
+    outline: none;
+  }
+}
+
+.text_wrapper {
+  font-size: 0.85rem;
+}
