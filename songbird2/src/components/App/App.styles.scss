@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+
+  background-color: #000000e6;
+
+  user-select: none;
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.app {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+
+  &--game_page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--congrat_page {
+    width: 100%;
+    padding: 30px;
+
+    background-color: lighten(#000000e6, 20%);
+    border: 1px solid white;
+    border-radius: 15px;
+  }
+}

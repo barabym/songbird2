@@ -1,0 +1,43 @@
+.answer {
+  width: 100%;
+  margin: 3px 0;
+  padding: 10px 20px;
+
+  background-color: lighten(#000000e6, 20%);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: 0.1s;
+
+  &--indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+
+    background-color: lighten(#000000e6, 50%);
+    border-radius: 50%;
+
+    &-true {
+      background-color: green;
+    }
+
+    &-false {
+      background-color: red;
+    }
+  }
+
+  &:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  &:last-child {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  &:hover {
+    background-color: lighten(#076598, 15%);
+  }
+}
